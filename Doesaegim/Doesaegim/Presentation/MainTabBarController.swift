@@ -29,7 +29,7 @@ final class MainTabBarController: UITabBarController {
         let travelPlanViewController = UINavigationController(rootViewController: TravelListViewController())
         let expenseViewController = UINavigationController(rootViewController: ExpenseTravelListController())
         let mapViewController = UINavigationController(rootViewController: MapViewController())
-        let diaryViewController = UINavigationController(rootViewController: DiaryListViewController())
+        let diaryViewController = UINavigationController(rootViewController: DiaryAddViewController())
         let settingViewController = UINavigationController(rootViewController: SettingViewController())
         
         travelPlanViewController.tabBarItem.image = UIImage(systemName: "calendar")
@@ -56,6 +56,8 @@ final class MainTabBarController: UITabBarController {
             ],
             animated: true
         )
+
+        selectedIndex = 3
     }
 
 }
