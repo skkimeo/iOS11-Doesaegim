@@ -37,6 +37,7 @@ public class Diary: NSManagedObject {
                 return .success(diary)
             }
         case .failure(let error):
+            print(error)
             return .failure(error)
         }
         return .failure(CoreDataError.saveFailure(.diary))
