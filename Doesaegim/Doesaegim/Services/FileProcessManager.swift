@@ -103,7 +103,7 @@ extension FileProcessManager {
             return nil
         }
 
-        return documentsDirectory.appendingPathComponent(path)
+        return documentsDirectory.appendingPathComponent(path.replacingOccurrences(of: "/", with: "-"))
     }
 }
 
